@@ -1,6 +1,11 @@
 
 var body = document.querySelector('body')
 
+const rgbConst = 255
+function randomColors(){
+return 'rgb(' + Math.round(rgbConst*Math.random())+ ', ' + Math.round(rgbConst*Math.random()) + ', ' + Math.round(rgbConst*Math.random())+ ')'
+}
+
 function checkerBoard(){
   for (let i=0; i < 60; i++){
     var div = document.createElement('div')
